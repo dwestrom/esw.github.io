@@ -1,0 +1,28 @@
+<html>
+   <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <title>Test Page</title>
+   </head>
+   <body>
+        <script type='text/javascript'>
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+ 
+            embeddedservice_bootstrap.init(
+                '00DSG00000L1K8h',
+                'OFWestromESDeploy',
+                'https://orgfarm-396fde4871.my.site-com.dwestrom-6m6iojbnie5f1.wa.crm.dev:6101/ESWLocESWWestromDeploy1739404534629',
+                {
+                    scrt2URL: 'https://orgfarm-d04cf1dba7.test1.my.pc-rnd.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+<script type='text/javascript' src='https://orgfarm-396fde4871.my.site-com.dwestrom-6m6iojbnie5f1.wa.crm.dev:6101/ESWLocESWWestromDeploy1739404534629/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+   </body>
+</html>
