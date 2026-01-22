@@ -8,13 +8,14 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.debugMode = true;
 
 			embeddedservice_bootstrap.init(
-				'00Dxx0000006Gqx',
-				'westrom',
-				'https://orgfarm-47242ff51c.my.site-com.djnk8odu3fzk0p5054c0k.wa.crm.dev:6101/ESWwestrom1769045151290',
+				'00DSB00000da1NJ', // '00DSG00000dbaUH' 262, //'00Dxx00qityso5g' workspace org,
+				'cwc_dev_01', //'westrom',
+				'https://orgfarm-59959be9f9.my.site-com.djnk8odu3fzk0p5054c0k.wa.crm.dev:6101/ESWwestrom1769113838983',
 				{
-					scrt2URL: 'https://orgfarm-47242ff51c.my.salesforce-scrt-com.djnk8odu3fzk0p5054c0k.wa.crm.dev'
+					scrt2URL: 'https://orgfarm-46c4c41fb0.test1.my.pc-rnd.salesforce-scrt.com'
 				}
 			);
 		} catch (err) {
@@ -22,7 +23,7 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://orgfarm-47242ff51c.my.site-com.djnk8odu3fzk0p5054c0k.wa.crm.dev:6101/ESWwestrom1769045151290/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://orgfarm-59959be9f9.my.site-com.djnk8odu3fzk0p5054c0k.wa.crm.dev:6101/ESWwestrom1769113838983/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
    </body>
 </html>
